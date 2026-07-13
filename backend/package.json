@@ -1,13 +1,20 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Backend API - Farenheit Invisible",
+  "main": "dist/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "ts-node-dev src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "test": "echo \"Tests pendientes\""
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "transport",
+    "fleet-management",
+    "farenheit-invisible"
+  ],
+  "author": "kike",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^6.0.0",
@@ -31,6 +38,6 @@
     "prettier": "^3.9.5",
     "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
-    "typescript": "^7.0.2"
+    "typescript": "^5.9.3"
   }
 }
